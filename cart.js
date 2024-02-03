@@ -35,7 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((total, food) => total + food.price, 0)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,7 +56,16 @@ const cart = [
 
 //CODE HERE
 
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    const taxes = cartTotal * tax
+    const finalPrice = cartTotal + taxes - couponValue
+    return finalPrice
+}
 
+console.log(calcFinalPrice(9.99, 1, .06 ))
+console.log(calcFinalPrice(8.99, 1, .06))
+console.log(calcFinalPrice(7.99, 1, .06))
+///console logs for all three
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -80,6 +90,10 @@ const cart = [
 /*
     TEXT ANSWER HERE
 
+    //First we would need the name and second, the age of the customer - the site of the reasturant should verify the age of the customer
+    in this hypothetical resturant - it is more of a "Cheesecake Factory" where different types of foods and styles are on the menu, which is 
+    why it will have a "favorite food" property to cater toward the customers favorite types of foods. It will also have an Email property so the 
+    resturant can email them promotions, coupons, etc //
 */
 
 /*
@@ -88,3 +102,10 @@ const cart = [
 */
 
 //CODE HERE
+
+const customer = {
+    name: 'Brandon',
+    age: 30,
+    favoriteFood: 'Italian',
+    email: 'brajgon@gmail.com'
+}
