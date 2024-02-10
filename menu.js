@@ -73,11 +73,8 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
-// const { name, category, popularity, rating, tags } = pizza;
-// const newPizza = {
-//     ...pizza, price: 19.99
-// }
-// console.log(newPizza)
+const { price } = pizza;
+console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -88,11 +85,8 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
-const { name, price, popularity, rating, tags } = pizza;
-const newPizza = {
-    ...pizza, category: `Just like Ma' used to make`
-}
-console.log(newPizza)
+const { category } = pizza
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
